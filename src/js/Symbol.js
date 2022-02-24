@@ -29,10 +29,14 @@ export default class Symbol {
       "Riah",
       "Shay",
       "Sunny",
+      "Treyton"
     ];
   }
 
-  static random() {
+  static random(last) {
+    if (null != last && Math.random() < .2) {
+      return last;
+    }
     return this.symbols[Math.floor(Math.random() * this.symbols.length)];
   }
 }

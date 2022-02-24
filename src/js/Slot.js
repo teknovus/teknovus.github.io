@@ -31,6 +31,7 @@ export default class Slot {
       ["Riah", 0],
       ["Shay", 0],
       ["Sunny", 0],
+      ["Treyton", 0],
     ]);
 
     this.container = domElement;
@@ -53,13 +54,12 @@ export default class Slot {
   spin() {
     this.currentSymbols = this.nextSymbols;
     this.nextSymbols = [
-      [Symbol.random(), Symbol.random(), Symbol.random()],
-      [Symbol.random(), Symbol.random(), Symbol.random()],
-      [Symbol.random(), Symbol.random(), Symbol.random()],
-      [Symbol.random(), Symbol.random(), Symbol.random()],
-      [Symbol.random(), Symbol.random(), Symbol.random()],
+      [Symbol.random(null), Symbol.random(null), Symbol.random(null)],
     ];
-
+    for (let i = 0; i < 3; i++) {
+      this.nextSymbols.push([Symbol.random(this.nextSymbols[i][0]), Symbol.random(this.nextSymbols[i][1]), Symbol.random(this.nextSymbols[i][2])])
+    }
+    this.nextSymbols.push([Symbol.random(null), Symbol.random(null), Symbol.random(null)])
     this.onSpinStart(this.nextSymbols);
 
     return Promise.all(
