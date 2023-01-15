@@ -254,7 +254,10 @@
                                 ["Shay", 0],
                                 ["Sunny", 0],
                                 ["Treyton", 0],
+                          
                             ])),
+                            (
+    this.spinCount = 0),
                             (this.container = t),
                             (this.reels = Array.from(this.container.getElementsByClassName("reel")).map(function (n, t) {
                                 return new a(n, t, e.currentSymbols[t]);
@@ -296,7 +299,7 @@
                                   
     this.spinCount++;
                                     console.log(this.spinCount);
-    document.getElementById("counter").textContent = this.spinCount;
+    document.getElementById("counter").innerHTML = this.spinCount;
                                     (this.spinButton.disabled = !0), null === (t = (e = this.config).onSpinStart) || void 0 === t || t.call(e, n);
                                 },
                             },
