@@ -295,7 +295,7 @@
                                     var t, e;
                                   
     this.spinCount++;
-    document.getElementById("counter").innerHTML = this.spinCount;
+    document.getElementById("counter").innerText = this.spinCount;
                                     (this.spinButton.disabled = !0), null === (t = (e = this.config).onSpinStart) || void 0 === t || t.call(e, n);
                                 },
                             },
