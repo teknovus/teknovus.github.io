@@ -2,8 +2,9 @@
 
 ![Build and Deploy Status](https://github.com/johakr/html5-slot-machine/actions/workflows/deploy.yml/badge.svg) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-This is a modern proof of concept casino slot machine game, built using only vanilla HTML, CSS and JavaScript.
-No Flash or Frameworks required. Allowing for an amazing low bundle size and blazing fast performance.
+This is a fork of a slot machine web game that I made to make fun of my friend who kept gambling for virtual stuffed animals in roblox
+
+Of course, they ended up enjoying this game anyways
 
 Built using the _Web Animations API_.
 
